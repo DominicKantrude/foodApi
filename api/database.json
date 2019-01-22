@@ -1,0 +1,25 @@
+{
+  "foods": [
+    {
+      "name": "Authentic Italian Lasagna",
+      "category": "pasta",
+      "ethnicity": "italian",
+      "barcode": "0011110111432",
+      "id": 1
+    },
+    {
+      "name": "Poulet au Curry & Riz - Fleury Michon",
+      "category": "pizza",
+      "ethnicity": "italian",
+      "barcode": "3302746282021",
+      "id": 2
+    },
+    {
+      "name": "Hotdogs Made With Chicken & Pork",
+      "category": "meat",
+      "ethnicity": "american",
+      "barcode": "0011161465546",
+      "id": 3
+    }
+  ]
+}
