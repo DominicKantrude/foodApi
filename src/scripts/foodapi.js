@@ -12,7 +12,10 @@ const makeFoodHtml = (food) => {
 
 }
 
-
+const printFoodToDom = (html) => {
+    let element = document.querySelector(".foodList");
+    element.innerHTML = html;
+}
 
 
 fetch("http://localhost:8088/foods")
@@ -24,23 +27,23 @@ fetch("http://localhost:8088/foods")
                 .then(productInfo => {
                     food.ingredients = productInfo.product.ingredients
 
-                    
+
                     food.countryOfOrigin = productInfo.product.countries_tags
-                    
+
                     // food.caloriesPerServing = 
                     food.fatPerServing = productInfo.product.nutriments.fat_serving
                     console.log(food.fatPerServing);
                     food.sugarPerServing = productInfo.product.nutriments.sugars_serving
-                    
+
                     console.log("here");
                     makeFoodHtml(food);
-                    let element = document.querySelector(".foodList");
-                element.innerHTML = html;
+                    printFoodToDom(html)
+
                 })
-                
+
 
         });
-       
+
 
 
     })
